@@ -15,6 +15,8 @@
 		AA9637681F661DAD006A4CAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA9637661F661DAD006A4CAC /* LaunchScreen.storyboard */; };
 		AA9637731F661DAD006A4CAC /* SQL_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9637721F661DAD006A4CAC /* SQL_DemoTests.m */; };
 		AA96377E1F661DAE006A4CAC /* SQL_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96377D1F661DAE006A4CAC /* SQL_DemoUITests.m */; };
+		AA96378D1F661DE2006A4CAC /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AA96378C1F661DE2006A4CAC /* DataBase.m */; };
+		AA9637901F6621D8006A4CAC /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96378F1F6621D8006A4CAC /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		AA9637791F661DAE006A4CAC /* SQL_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQL_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA96377D1F661DAE006A4CAC /* SQL_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQL_DemoUITests.m; sourceTree = "<group>"; };
 		AA96377F1F661DAE006A4CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA96378B1F661DE2006A4CAC /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
+		AA96378C1F661DE2006A4CAC /* DataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBase.m; sourceTree = "<group>"; };
+		AA96378F1F6621D8006A4CAC /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA9637901F6621D8006A4CAC /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,7 @@
 				AA9637711F661DAD006A4CAC /* SQL_DemoTests */,
 				AA96377C1F661DAE006A4CAC /* SQL_DemoUITests */,
 				AA9637561F661DAD006A4CAC /* Products */,
+				AA96378E1F6621D8006A4CAC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +112,8 @@
 				AA96375C1F661DAD006A4CAC /* AppDelegate.m */,
 				AA96375E1F661DAD006A4CAC /* ViewController.h */,
 				AA96375F1F661DAD006A4CAC /* ViewController.m */,
+				AA96378B1F661DE2006A4CAC /* DataBase.h */,
+				AA96378C1F661DE2006A4CAC /* DataBase.m */,
 				AA9637611F661DAD006A4CAC /* Main.storyboard */,
 				AA9637641F661DAD006A4CAC /* Assets.xcassets */,
 				AA9637661F661DAD006A4CAC /* LaunchScreen.storyboard */,
@@ -138,6 +147,14 @@
 				AA96377F1F661DAE006A4CAC /* Info.plist */,
 			);
 			path = SQL_DemoUITests;
+			sourceTree = "<group>";
+		};
+		AA96378E1F6621D8006A4CAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA96378F1F6621D8006A4CAC /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +224,7 @@
 				TargetAttributes = {
 					AA9637541F661DAD006A4CAC = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = M3YN599LE4;
 						ProvisioningStyle = Automatic;
 					};
 					AA96376D1F661DAD006A4CAC = {
@@ -275,6 +293,7 @@
 			files = (
 				AA9637601F661DAD006A4CAC /* ViewController.m in Sources */,
 				AA96375D1F661DAD006A4CAC /* AppDelegate.m in Sources */,
+				AA96378D1F661DE2006A4CAC /* DataBase.m in Sources */,
 				AA96375A1F661DAD006A4CAC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M3YN599LE4;
 				INFOPLIST_FILE = SQL_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cc.SQL-Demo";
@@ -437,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M3YN599LE4;
 				INFOPLIST_FILE = SQL_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cc.SQL-Demo";
